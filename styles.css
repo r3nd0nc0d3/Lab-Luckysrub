@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #ecfdf5;
+    font-family: "Inter", sans-serif;
+}
+
+p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #022c22;
+}
+
+/* Header section */
+header{
+    background: linear-gradient(45deg, #064e3be0, #047857e0),
+    url(images/banner.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 6.2rem;
+}
+
+header > img{
+    width: 150px;
+    height: auto;
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+}
+
+@keyframes logoAnimation{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80%{
+        opacity: 0.5;
+        transform: translateX(2rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Navbar Section */
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.4rem;
+    padding: 2rem;
+    margin-bottom: 6.2rem;
+}
+
+nav > a{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav > a:link,
+nav > a:visited{
+    color: #064e3b;
+}
+
+nav > a:hover,
+nav > a:active{
+    color: #07a578 ;
+    font-weight: 700;
+    
+    
+}
+/* Main section */
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2 1fr);
+    column-gap: 3.2rem;
+    row-gap: 6.2rem;
+    padding: 0 3.6rem;
+    margin-bottom: 6.4rem;
+}
+
+.main-article{
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+    background: linear-gradient(90deg,#043024, #06644b);
+    animation: gradient-animation 12s ease infinite;
+    grid-column: 1  /-1;
+}
+
+.main-article > div{
+    padding: 3.6rem;
+}
+
+.main-article > img{
+    width: 50rem;
+}
+
+.main-article > div > h2{
+    color: #34d399;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.main-article > div > p{
+    color: #ecfdf5;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+}
+
+.main-article > div > a{
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.main-article > div  > a:link,
+.main-article > div  > a:visited{
+    color: #cffff2;
+}
+
+.main-article > div  > a:hover,
+.main-article > div  > a:active{
+    color: #28ffc2 ;
+    font-weight: 300;
+    
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 80%;
+    }
+    100% {
+        background-position: 0% 80%;
+    }
+}
+/* Secondary articles */
+.card{
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover{
+    transform: translateY(-1.2rem);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.36);
+    border-radius: 1rem;
+    overflow: hidden;   
+}
+
+.card h2{
+    color: #034838;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.card p{
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+}
+
+.card img{
+    width: 30rem;
+}
+
+.card > div > a{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.card > div > a:link,
+.card > div > a:visited{
+    color: #0ea582;
+    font-weight: 500;
+}
+.card > div > a:hover,
+.card > div > a:active{
+    color: #022c22;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #022c22;
+    padding: 3.6rem;
+}
+
+footer > img{
+    width: 8rem;
+}
+
+footer p{
+    color: #ecfdf5;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+footer > div > a{
+    margin-right: 1.4rem;
+}
+
+footer > div > a{
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+footer > div > a:link,
+footer > div > a:visited{
+    color: #cffff2;
+}
+
+footer > div > a:hover,
+footer > div > a:active{
+    color: #28ffc2 ;
+    font-weight: 300;
+    
+}
+
